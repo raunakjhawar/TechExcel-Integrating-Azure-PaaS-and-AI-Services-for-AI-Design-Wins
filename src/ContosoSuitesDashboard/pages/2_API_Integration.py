@@ -8,6 +8,7 @@ def get_hotels():
     """Return a list of hotels from the API."""
     api_endpoint = st.secrets["api"]["endpoint"]
     response = requests.get(f"{api_endpoint}/Hotels", timeout=10)
+    print(response.text)  # This will show the raw response content
     return response
 
 @st.cache_data
