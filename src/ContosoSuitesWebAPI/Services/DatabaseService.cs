@@ -38,7 +38,6 @@ public class DatabaseService : IDatabaseService
             });
         }
         conn.Close();
-        print(hotels);
         return hotels;
     }
 
